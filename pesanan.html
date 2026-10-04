@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan - Es Teh Bim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Es Teh Bim</h1>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="pesanan.html">Pesanan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="order-section">
+
+            <h2>Form Pesanan</h2>
+
+            <form id="order-form">
+
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        placeholder="Masukkan nama"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="menu">Pilih Menu</label>
+
+                    <select id="menu">
+                        <option value="">-- Pilih Menu --</option>
+                        <option value="Es Teh Original">
+                            Es Teh Original - Rp5.000
+                        </option>
+                        <option value="Es Teh Lemon">
+                            Es Teh Lemon - Rp7.000
+                        </option>
+                        <option value="Es Teh Strawberry">
+                            Es Teh Strawberry - Rp9.000
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="jumlah">Jumlah</label>
+
+                    <input
+                        type="number"
+                        id="jumlah"
+                        min="1"
+                        value="1"
+                    >
+                </div>
+
+                <button type="submit" class="btn">
+                    Pesan Sekarang
+                </button>
+
+            </form>
+
+            <div id="order-result"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Es Teh Bim. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
