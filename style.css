@@ -312,4 +312,24 @@ footer {
     .product-image {
         height: 230px;
     }
+
+    .product-image .tea-main {
+        width: 150px !important;
+        height: 200px !important;
+    }
+
+    .product-image .fruit {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .product-image .lemon {
+        right: 25%;
+        bottom: 15px;
+    }
+
+    .product-image .strawberry {
+        right: 22%;
+        bottom: 15px;
+    }
 }
