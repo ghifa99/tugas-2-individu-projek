@@ -326,9 +326,17 @@ footer {
     }
 
     .product-image .fruit {
-        width: 60px !important;
-        height: 60px !important;
-    }
+    position: absolute;
+    left: calc(50% + 30px);
+    bottom: 15px;
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: contain;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 2;
+}
 
     .product-image .lemon,
     .product-image .strawberry {
