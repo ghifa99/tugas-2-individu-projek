@@ -25,6 +25,16 @@ const products = [
 
 let cart = [];
 
+/* Jika gambar buah tidak ketemu (beda huruf besar/kecil), coba versi lainnya */
+function gantiNamaFile(img) {
+    const nama = img.getAttribute("src");
+    const alt = nama.charAt(0) === nama.charAt(0).toLowerCase()
+        ? nama.charAt(0).toUpperCase() + nama.slice(1)
+        : nama.charAt(0).toLowerCase() + nama.slice(1);
+    img.onerror = null;
+    img.src = alt;
+}
+
 const productList = document.getElementById("product-list");
 const cartList = document.getElementById("cart-list");
 const totalPrice = document.getElementById("total-price");
@@ -42,7 +52,8 @@ function displayProducts() {
             fruit = `
                 <img class="fruit ${product.fruitClass}"
                      src="${product.fruit}"
-                     alt="${product.name}">
+                     alt="${product.name}"
+                     onerror="gantiNamaFile(this)">
             `;
         }
 
