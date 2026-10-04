@@ -303,6 +303,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .hero-image {
+        order: -1;
+    }
+
     .hero-text h2 {
         font-size: 28px;
     }
