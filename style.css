@@ -147,38 +147,42 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
     border-radius: 10px;
 }
 
-.product-image .tea-main {
-    width: 150px !important;
-    height: 200px !important;
+/* Semua gelas di kartu produk */
+.product-image .tea-main,
+.product-image .original {
+    width: 120px !important;
+    height: 170px !important;
     object-fit: contain;
     position: relative;
     z-index: 1;
 }
 
+/* Buah Lemon dan Strawberry */
 .product-image .fruit {
     position: absolute;
-    width: 60px !important;
-    height: 60px !important;
+    width: 55px !important;
+    height: 55px !important;
     object-fit: contain;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
     z-index: 2;
 }
 
+/* Lemon */
 .product-image .lemon {
-    left: calc(50% + 30px);
-    bottom: 15px;
+    left: calc(50% + 25px);
+    bottom: 20px;
 }
 
+/* Strawberry */
 .product-image .strawberry {
-    left: calc(50% + 30px);
-    bottom: 15px;
+    left: calc(50% + 25px);
+    bottom: 20px;
 }
 
+/* Nama produk */
 .product-card h3 {
     margin-bottom: 5px;
 }
@@ -263,6 +267,7 @@ footer {
 
 /* Tablet */
 @media (max-width: 768px) {
+
     .navbar {
         flex-direction: column;
         gap: 10px;
@@ -286,14 +291,27 @@ footer {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .product-image .tea-main,
+    .product-image .original {
+        width: 115px !important;
+        height: 165px !important;
+    }
+
+    .product-image .fruit {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
     .product-image .lemon,
     .product-image .strawberry {
-        left: calc(50% + 30px);
+        left: calc(50% + 25px);
+        bottom: 20px;
     }
 }
 
 /* HP */
 @media (max-width: 480px) {
+
     .nav-menu {
         gap: 10px;
         font-size: 14px;
@@ -301,10 +319,6 @@ footer {
 
     .product-container {
         grid-template-columns: 1fr;
-    }
-
-    .hero-image {
-        order: -1;
     }
 
     .hero-text h2 {
@@ -317,30 +331,23 @@ footer {
     }
 
     .product-image {
-        height: 230px;
+        height: 220px;
     }
 
-    .product-image .tea-main {
-        width: 150px !important;
-        height: 200px !important;
+    .product-image .tea-main,
+    .product-image .original {
+        width: 110px !important;
+        height: 160px !important;
     }
 
     .product-image .fruit {
-    position: absolute;
-    left: calc(50% + 30px);
-    bottom: 15px;
-    width: 60px !important;
-    height: 60px !important;
-    object-fit: contain;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    z-index: 2;
-}
+        width: 50px !important;
+        height: 50px !important;
+    }
 
     .product-image .lemon,
     .product-image .strawberry {
-        left: calc(50% + 30px);
-        bottom: 15px;
+        left: calc(50% + 20px);
+        bottom: 20px;
     }
 }
