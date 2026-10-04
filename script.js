@@ -10,7 +10,7 @@ const products = [
         name: "Es Teh Lemon",
         price: 7000,
         image: "esteh.png",
-        fruit: "lemon.webp",
+        fruit: "Lemon.webp",
         fruitClass: "lemon"
     },
     {
@@ -18,7 +18,7 @@ const products = [
         name: "Es Teh Strawberry",
         price: 9000,
         image: "esteh.png",
-        fruit: "strawberry.webp",
+        fruit: "Strawberry.webp",
         fruitClass: "strawberry"
     }
 ];

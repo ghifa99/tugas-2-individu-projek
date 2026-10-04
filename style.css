@@ -147,37 +147,35 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     border-radius: 10px;
 }
 
-.product-image .tea-main,
-.product-image .original {
+.product-image .tea-main {
     width: 150px !important;
     height: 200px !important;
     object-fit: contain;
-}
-
-.product-image .tea-main {
     position: relative;
     z-index: 1;
 }
 
 .product-image .fruit {
     position: absolute;
-    width: 65px !important;
-    height: 65px !important;
+    width: 60px !important;
+    height: 60px !important;
     object-fit: contain;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     z-index: 2;
 }
 
 .product-image .lemon {
-    right: 15px;
+    left: calc(50% + 30px);
     bottom: 15px;
 }
 
 .product-image .strawberry {
-    right: 10px;
+    left: calc(50% + 30px);
     bottom: 15px;
 }
 
@@ -287,6 +285,11 @@ footer {
     .product-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .product-image .lemon,
+    .product-image .strawberry {
+        left: calc(50% + 30px);
+    }
 }
 
 /* HP */
@@ -323,13 +326,9 @@ footer {
         height: 60px !important;
     }
 
-    .product-image .lemon {
-        right: 25%;
-        bottom: 15px;
-    }
-
+    .product-image .lemon,
     .product-image .strawberry {
-        right: 22%;
+        left: calc(50% + 30px);
         bottom: 15px;
     }
 }
