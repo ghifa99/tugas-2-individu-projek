@@ -139,6 +139,7 @@ header {
 }
 
 /* Foto Produk */
+/* Foto Produk */
 .product-image {
     width: 100%;
     height: 220px;
@@ -147,7 +148,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
 }
 
 .product-image .tea-main {
@@ -163,17 +163,18 @@ header {
     width: 65px !important;
     height: 65px !important;
     object-fit: contain;
+    display: block !important;
     z-index: 2;
 }
 
 .product-image .lemon {
-    right: 15px;
-    bottom: 15px;
+    left: calc(50% + 35px);
+    bottom: 20px;
 }
 
 .product-image .strawberry {
-    right: 10px;
-    bottom: 15px;
+    left: calc(50% + 35px);
+    bottom: 20px;
 }
 
 .product-card h3 {
@@ -316,15 +317,12 @@ footer {
     .product-image .fruit {
         width: 60px !important;
         height: 60px !important;
+        display: block !important;
     }
 
-    .product-image .lemon {
-        right: 25%;
-        bottom: 15px;
-    }
-
+    .product-image .lemon,
     .product-image .strawberry {
-        right: 22%;
+        left: calc(50% + 35px);
         bottom: 15px;
     }
 }
