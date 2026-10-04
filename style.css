@@ -147,18 +147,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     border-radius: 10px;
 }
 
-.product-image .tea-main,
-.product-image .original {
+.product-image .tea-main {
     width: 150px !important;
     height: 200px !important;
     object-fit: contain;
-}
-
-.product-image .tea-main {
     position: relative;
     z-index: 1;
 }
